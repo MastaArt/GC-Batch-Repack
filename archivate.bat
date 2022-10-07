@@ -16,7 +16,8 @@ for /f "tokens=1,2 delims=;" %%I in (%input%) do (
 	set arg2=%%J
 )
 
+del /s /q "%arg1%"
 7za.exe a "%arg1%" "%arg2%*.*" -r
-rmdir "%arg2%" /s /q
+rmdir /s /q "%arg2%"
 
 exit 0
