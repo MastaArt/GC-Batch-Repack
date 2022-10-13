@@ -9,8 +9,8 @@ fn getFilesRecursive root ptrn: "*.max" = (
 
 fn isAllTexturesPresent f o = (
 		local ignorePtrn = #(
-			@"*\UV_Checker.*"
-			@"*\*.hdc"
+			@"*\UV_Checker.*",
+			@"*\*.hdc",
 			@"*\*.cube"
 		) 
 		local out = #()
